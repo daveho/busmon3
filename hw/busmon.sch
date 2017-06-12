@@ -114,17 +114,6 @@ CA2
 Text Label 10250 6100 0    60   ~ 0
 CA2
 $Comp
-L CONN_01X08 J1
-U 1 1 592DF998
-P 5400 7800
-F 0 "J1" H 5400 8250 50  0000 C CNN
-F 1 "CONN_01X08" V 5500 7800 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 5400 7800 50  0001 C CNN
-F 3 "" H 5400 7800 50  0001 C CNN
-	1    5400 7800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Q_PNP_EBC Q1
 U 1 1 592DFC6D
 P 7950 3450
@@ -309,21 +298,21 @@ Wire Wire Line
 Wire Wire Line
 	4300 3150 4650 3150
 Wire Wire Line
-	4900 7450 5200 7450
+	4900 7450 5350 7450
 Wire Wire Line
-	4900 7550 5200 7550
+	4900 7550 5350 7550
 Wire Wire Line
-	4900 7650 5200 7650
+	4900 7650 5350 7650
 Wire Wire Line
-	4900 7750 5200 7750
+	4900 7750 5350 7750
 Wire Wire Line
-	4900 7850 5200 7850
+	4900 7850 5350 7850
 Wire Wire Line
-	4900 7950 5200 7950
+	4900 7950 5350 7950
 Wire Wire Line
-	4900 8050 5200 8050
+	4900 8050 5350 8050
 Wire Wire Line
-	4900 8150 5200 8150
+	4900 8150 5350 8150
 Wire Wire Line
 	8050 3250 8050 3200
 Wire Wire Line
@@ -449,9 +438,9 @@ F 3 "" H 3350 8500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3150 8450 3000 8450
+	3000 8450 3150 8450
 Wire Wire Line
-	3000 8450 3000 8250
+	3000 8250 3000 8450
 Wire Wire Line
 	3150 8550 3000 8550
 Wire Wire Line
@@ -480,7 +469,7 @@ F 3 "" H 3000 8750 50  0001 C CNN
 $EndComp
 Text Notes 3250 8900 0    60   ~ 0
 power\nconnector
-Text Notes 5650 7750 0    60   ~ 0
+Text Notes 7350 7750 0    60   ~ 0
 low data input
 $Comp
 L ATMEGA164A-A U1
@@ -607,17 +596,6 @@ Text Notes 11650 7050 0    60   ~ 0
 MAN3620\nleft low digit
 Text Notes 13650 7050 0    60   ~ 0
 MAN3620\nright low digit
-$Comp
-L CONN_01X08 J2
-U 1 1 593E763B
-P 5400 8700
-F 0 "J2" H 5400 9150 50  0000 C CNN
-F 1 "CONN_01X08" V 5500 8700 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 5400 8700 50  0001 C CNN
-F 3 "" H 5400 8700 50  0000 C CNN
-	1    5400 8700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3000 6250 3000 6350
 Wire Wire Line
@@ -725,7 +703,7 @@ D14
 Text Label 4500 5050 0    60   ~ 0
 D15
 Wire Bus Line
-	4800 4450 4800 8950
+	4800 4450 4800 8850
 Entry Wire Line
 	4700 4350 4800 4450
 Entry Wire Line
@@ -759,21 +737,21 @@ Entry Wire Line
 Entry Wire Line
 	4700 5950 4800 6050
 Wire Wire Line
-	5200 8350 4900 8350
+	5350 8250 4900 8250
 Wire Wire Line
-	5200 8450 4900 8450
+	5350 8350 4900 8350
 Wire Wire Line
-	5200 8550 4900 8550
+	5350 8450 4900 8450
 Wire Wire Line
-	5200 8650 4900 8650
+	5350 8550 4900 8550
 Wire Wire Line
-	5200 8750 4900 8750
+	5350 8650 4900 8650
 Wire Wire Line
-	5200 8850 4900 8850
+	5350 8750 4900 8750
 Wire Wire Line
-	5200 8950 4900 8950
+	5350 8850 4900 8850
 Wire Wire Line
-	5200 9050 4900 9050
+	5350 8950 4900 8950
 Text Label 5050 7450 0    60   ~ 0
 D0
 Text Label 5050 7550 0    60   ~ 0
@@ -790,23 +768,23 @@ Text Label 5050 8050 0    60   ~ 0
 D6
 Text Label 5050 8150 0    60   ~ 0
 D7
-Text Notes 5600 8650 0    60   ~ 0
+Text Notes 7300 8650 0    60   ~ 0
 high data input
-Text Label 5050 8350 0    60   ~ 0
+Text Label 5050 8250 0    60   ~ 0
 D8
-Text Label 5050 8450 0    60   ~ 0
+Text Label 5050 8350 0    60   ~ 0
 D9
-Text Label 5050 8550 0    60   ~ 0
+Text Label 5050 8450 0    60   ~ 0
 D10
-Text Label 5050 8650 0    60   ~ 0
+Text Label 5050 8550 0    60   ~ 0
 D11
-Text Label 5050 8750 0    60   ~ 0
+Text Label 5050 8650 0    60   ~ 0
 D12
-Text Label 5050 8850 0    60   ~ 0
+Text Label 5050 8750 0    60   ~ 0
 D13
-Text Label 5050 8950 0    60   ~ 0
+Text Label 5050 8850 0    60   ~ 0
 D14
-Text Label 5050 9050 0    60   ~ 0
+Text Label 5050 8950 0    60   ~ 0
 D15
 Entry Wire Line
 	4800 7350 4900 7450
@@ -825,6 +803,8 @@ Entry Wire Line
 Entry Wire Line
 	4800 8050 4900 8150
 Entry Wire Line
+	4800 8150 4900 8250
+Entry Wire Line
 	4800 8250 4900 8350
 Entry Wire Line
 	4800 8350 4900 8450
@@ -838,8 +818,6 @@ Entry Wire Line
 	4800 8750 4900 8850
 Entry Wire Line
 	4800 8850 4900 8950
-Entry Wire Line
-	4800 8950 4900 9050
 $Comp
 L Q_PNP_EBC Q3
 U 1 1 593E8971
@@ -1076,4 +1054,15 @@ Wire Wire Line
 	5150 4850 5900 4850
 Text Notes 5850 5150 0    60   ~ 0
 programming\nheader
+$Comp
+L CONN_01X16 J1
+U 1 1 593ECF2F
+P 5550 8200
+F 0 "J1" H 5550 9050 50  0000 C CNN
+F 1 "CONN_01X16" V 5650 8200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x16_Pitch2.54mm" H 5550 8200 50  0001 C CNN
+F 3 "" H 5550 8200 50  0001 C CNN
+	1    5550 8200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

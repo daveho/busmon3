@@ -469,7 +469,7 @@ F 3 "" H 3000 8750 50  0001 C CNN
 $EndComp
 Text Notes 3250 8900 0    60   ~ 0
 power\nconnector
-Text Notes 7350 7750 0    60   ~ 0
+Text Notes 5750 7750 0    60   ~ 0
 low data input
 $Comp
 L ATMEGA164A-A U1
@@ -768,7 +768,7 @@ Text Label 5050 8050 0    60   ~ 0
 D6
 Text Label 5050 8150 0    60   ~ 0
 D7
-Text Notes 7300 8650 0    60   ~ 0
+Text Notes 5700 8650 0    60   ~ 0
 high data input
 Text Label 5050 8250 0    60   ~ 0
 D8

@@ -1,35 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+EESchema Schematic File Version 4
 LIBS:busmon-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -44,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L DIL14 J3
+L busmon-rescue:DIL14 J3
 U 1 1 592DEE57
 P 7650 6400
 F 0 "J3" H 7650 6800 50  0000 C CNN
@@ -75,7 +46,7 @@ NoConn ~ 8250 6300
 Text Label 8150 6200 0    60   ~ 0
 B
 $Comp
-L DIL14 J4
+L busmon-rescue:DIL14 J4
 U 1 1 592DF5D1
 P 9850 6400
 F 0 "J4" H 9850 6800 50  0000 C CNN
@@ -114,7 +85,7 @@ CA2
 Text Label 10250 6100 0    60   ~ 0
 CA2
 $Comp
-L VCC #PWR01
+L busmon-rescue:VCC #PWR01
 U 1 1 592E0484
 P 8800 3000
 F 0 "#PWR01" H 8800 2850 50  0001 C CNN
@@ -129,7 +100,7 @@ CA1
 Text Label 8250 4300 0    60   ~ 0
 CA2
 $Comp
-L R R5
+L busmon-rescue:R R5
 U 1 1 592E125C
 P 5300 2400
 F 0 "R5" V 5380 2400 50  0000 C CNN
@@ -140,7 +111,7 @@ F 3 "" H 5300 2400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R6
+L busmon-rescue:R R6
 U 1 1 592E12E2
 P 5300 2550
 F 0 "R6" V 5380 2550 50  0000 C CNN
@@ -151,7 +122,7 @@ F 3 "" H 5300 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R7
+L busmon-rescue:R R7
 U 1 1 592E13D9
 P 5300 2700
 F 0 "R7" V 5380 2700 50  0000 C CNN
@@ -162,7 +133,7 @@ F 3 "" H 5300 2700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R8
+L busmon-rescue:R R8
 U 1 1 592E13DF
 P 5300 2850
 F 0 "R8" V 5380 2850 50  0000 C CNN
@@ -173,7 +144,7 @@ F 3 "" H 5300 2850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R9
+L busmon-rescue:R R9
 U 1 1 592E14A8
 P 5300 3000
 F 0 "R9" V 5380 3000 50  0000 C CNN
@@ -184,7 +155,7 @@ F 3 "" H 5300 3000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R10
+L busmon-rescue:R R10
 U 1 1 592E14AE
 P 5300 3150
 F 0 "R10" V 5380 3150 50  0000 C CNN
@@ -195,7 +166,7 @@ F 3 "" H 5300 3150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R11
+L busmon-rescue:R R11
 U 1 1 592E14B4
 P 5300 3300
 F 0 "R11" V 5380 3300 50  0000 C CNN
@@ -296,7 +267,7 @@ Wire Wire Line
 Wire Wire Line
 	8050 3200 8800 3200
 Wire Wire Line
-	8800 3000 8800 5050
+	8800 3000 8800 3200
 Wire Wire Line
 	8050 3850 8050 3800
 Wire Wire Line
@@ -311,9 +282,9 @@ Wire Wire Line
 Wire Wire Line
 	8050 4300 10650 4300
 Wire Wire Line
-	10650 4300 10650 6100
+	10650 4300 10650 5850
 Wire Wire Line
-	8700 3700 8700 6100
+	8700 3700 8700 5850
 Wire Wire Line
 	6900 6300 6900 5850
 Wire Wire Line
@@ -381,7 +352,7 @@ MAN3620\nleft high digit
 Text Notes 9650 7050 0    60   ~ 0
 MAN3620\nright high digit
 $Comp
-L VCC #PWR02
+L busmon-rescue:VCC #PWR02
 U 1 1 592E23BD
 P 3200 2000
 F 0 "#PWR02" H 3200 1850 50  0001 C CNN
@@ -392,7 +363,7 @@ F 3 "" H 3200 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L busmon-rescue:GND #PWR03
 U 1 1 592E23F1
 P 3150 6450
 F 0 "#PWR03" H 3150 6200 50  0001 C CNN
@@ -405,7 +376,7 @@ $EndComp
 Text Notes 11950 10200 0    60   ~ 0
 16 bit hexadecimal bus monitor
 $Comp
-L CONN_01X02 J7
+L busmon-rescue:CONN_01X02 J7
 U 1 1 592E2D34
 P 3350 8500
 F 0 "J7" H 3350 8650 50  0000 C CNN
@@ -418,13 +389,13 @@ $EndComp
 Wire Wire Line
 	3000 8450 3150 8450
 Wire Wire Line
-	3000 8250 3000 8450
+	3000 8250 3000 8300
 Wire Wire Line
 	3150 8550 3000 8550
 Wire Wire Line
-	3000 8550 3000 8750
+	3000 8550 3000 8700
 $Comp
-L VCC #PWR04
+L busmon-rescue:VCC #PWR04
 U 1 1 592E2EB4
 P 3000 8250
 F 0 "#PWR04" H 3000 8100 50  0001 C CNN
@@ -435,7 +406,7 @@ F 3 "" H 3000 8250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L busmon-rescue:GND #PWR05
 U 1 1 592E2EEA
 P 3000 8750
 F 0 "#PWR05" H 3000 8500 50  0001 C CNN
@@ -450,7 +421,7 @@ power\nconnector
 Text Notes 5750 7750 0    60   ~ 0
 low data input
 $Comp
-L ATMEGA164A-A U1
+L busmon-rescue:ATMEGA164A-A U1
 U 1 1 593E6C60
 P 3300 4250
 F 0 "U1" H 2450 6130 50  0000 L BNN
@@ -461,7 +432,7 @@ F 3 "" H 3300 4250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DIL14 J5
+L busmon-rescue:DIL14 J5
 U 1 1 593E7114
 P 11850 6400
 F 0 "J5" H 11850 6800 50  0000 C CNN
@@ -516,7 +487,7 @@ Wire Wire Line
 Wire Wire Line
 	12200 6700 12450 6700
 $Comp
-L DIL14 J6
+L busmon-rescue:DIL14 J6
 U 1 1 593E71EE
 P 13900 6400
 F 0 "J6" H 13900 6800 50  0000 C CNN
@@ -577,7 +548,7 @@ MAN3620\nright low digit
 Wire Wire Line
 	3000 6250 3000 6350
 Wire Wire Line
-	3000 6350 3300 6350
+	3000 6350 3100 6350
 Wire Wire Line
 	3150 6350 3150 6450
 Wire Wire Line
@@ -592,9 +563,9 @@ Connection ~ 3200 6350
 Wire Wire Line
 	3000 2250 3000 2100
 Wire Wire Line
-	3000 2100 3400 2100
+	3000 2100 3100 2100
 Wire Wire Line
-	3200 2000 3200 2250
+	3200 2000 3200 2100
 Wire Wire Line
 	3100 2250 3100 2100
 Connection ~ 3100 2100
@@ -606,7 +577,7 @@ Wire Wire Line
 Wire Wire Line
 	1750 3750 1750 3550
 $Comp
-L VCC #PWR06
+L busmon-rescue:VCC #PWR06
 U 1 1 593EAAB8
 P 1750 3550
 F 0 "#PWR06" H 1750 3400 50  0001 C CNN
@@ -680,8 +651,6 @@ Text Label 4500 4950 0    60   ~ 0
 D14
 Text Label 4500 5050 0    60   ~ 0
 D15
-Wire Bus Line
-	4800 4450 4800 8850
 Entry Wire Line
 	4700 4350 4800 4450
 Entry Wire Line
@@ -807,7 +776,7 @@ Wire Wire Line
 	8050 5050 8800 5050
 Connection ~ 8800 4400
 $Comp
-L R R1
+L busmon-rescue:R R1
 U 1 1 593E9A49
 P 7450 3450
 F 0 "R1" V 7530 3450 50  0000 C CNN
@@ -818,7 +787,7 @@ F 3 "" H 7450 3450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R2
+L busmon-rescue:R R2
 U 1 1 593E9AF1
 P 7450 4050
 F 0 "R2" V 7530 4050 50  0000 C CNN
@@ -829,7 +798,7 @@ F 3 "" H 7450 4050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R3
+L busmon-rescue:R R3
 U 1 1 593E9BED
 P 7450 4700
 F 0 "R3" V 7530 4700 50  0000 C CNN
@@ -840,7 +809,7 @@ F 3 "" H 7450 4700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R4
+L busmon-rescue:R R4
 U 1 1 593E9BF3
 P 7450 5300
 F 0 "R4" V 7530 5300 50  0000 C CNN
@@ -883,7 +852,7 @@ Wire Wire Line
 Wire Wire Line
 	8050 4950 12650 4950
 Wire Wire Line
-	12650 4950 12650 6100
+	12650 4950 12650 5850
 Wire Wire Line
 	12650 6100 12200 6100
 Wire Wire Line
@@ -900,7 +869,7 @@ CA3
 Wire Wire Line
 	8050 5500 14750 5500
 Wire Wire Line
-	14750 5500 14750 6100
+	14750 5500 14750 5850
 Wire Wire Line
 	14750 6100 14250 6100
 Wire Wire Line
@@ -919,7 +888,7 @@ CA3
 Text Label 8250 5500 0    60   ~ 0
 CA4
 $Comp
-L CP1 C1
+L busmon-rescue:CP1 C1
 U 1 1 593EE2FE
 P 2700 8500
 F 0 "C1" H 2725 8600 50  0000 L CNN
@@ -942,7 +911,7 @@ Connection ~ 3000 8700
 Text Notes 2100 8600 0    60   ~ 0
 decoupling\ncap
 $Comp
-L CONN_01X06 J8
+L busmon-rescue:CONN_01X06 J8
 U 1 1 593EF856
 P 6100 4600
 F 0 "J8" H 6100 4950 50  0000 C CNN
@@ -957,7 +926,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 4350 5450 5100
 $Comp
-L GND #PWR07
+L busmon-rescue:GND #PWR07
 U 1 1 593F01FF
 P 5450 5100
 F 0 "#PWR07" H 5450 4850 50  0001 C CNN
@@ -972,7 +941,7 @@ Wire Wire Line
 Wire Wire Line
 	5750 4450 5750 4200
 $Comp
-L VCC #PWR08
+L busmon-rescue:VCC #PWR08
 U 1 1 593F0381
 P 5750 4200
 F 0 "#PWR08" H 5750 4050 50  0001 C CNN
@@ -1011,7 +980,7 @@ Wire Wire Line
 Text Notes 5850 5150 0    60   ~ 0
 programming\nheader
 $Comp
-L CONN_01X16 J1
+L busmon-rescue:CONN_01X16 J1
 U 1 1 593ECF2F
 P 5550 8200
 F 0 "J1" H 5550 9050 50  0000 C CNN
@@ -1022,7 +991,7 @@ F 3 "" H 5550 8200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_PNP_BEC Q1
+L busmon-rescue:Q_PNP_BEC Q1
 U 1 1 593ED485
 P 7950 3450
 F 0 "Q1" H 8150 3500 50  0000 L CNN
@@ -1033,7 +1002,7 @@ F 3 "" H 7950 3450 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Q_PNP_BEC Q2
+L busmon-rescue:Q_PNP_BEC Q2
 U 1 1 593EDF41
 P 7950 4050
 F 0 "Q2" H 8150 4100 50  0000 L CNN
@@ -1044,7 +1013,7 @@ F 3 "" H 7950 4050 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Q_PNP_BEC Q3
+L busmon-rescue:Q_PNP_BEC Q3
 U 1 1 593EDFDF
 P 7950 4700
 F 0 "Q3" H 8150 4750 50  0000 L CNN
@@ -1055,7 +1024,7 @@ F 3 "" H 7950 4700 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Q_PNP_BEC Q4
+L busmon-rescue:Q_PNP_BEC Q4
 U 1 1 593EDFE5
 P 7950 5300
 F 0 "Q4" H 8150 5350 50  0000 L CNN
@@ -1065,4 +1034,36 @@ F 3 "" H 7950 5300 50  0001 C CNN
 	1    7950 5300
 	1    0    0    1   
 $EndComp
+Wire Wire Line
+	8800 3200 8800 3800
+Wire Wire Line
+	8700 5850 8700 6100
+Wire Wire Line
+	10650 5850 10650 6100
+Wire Wire Line
+	3150 6350 3200 6350
+Wire Wire Line
+	3100 6350 3150 6350
+Wire Wire Line
+	3200 6350 3300 6350
+Wire Wire Line
+	3100 2100 3200 2100
+Wire Wire Line
+	3200 2100 3200 2250
+Wire Wire Line
+	3200 2100 3400 2100
+Wire Wire Line
+	8800 3800 8800 4400
+Wire Wire Line
+	8800 4400 8800 5050
+Wire Wire Line
+	12650 5850 12650 6100
+Wire Wire Line
+	14750 5850 14750 6100
+Wire Wire Line
+	3000 8300 3000 8450
+Wire Wire Line
+	3000 8700 3000 8750
+Wire Bus Line
+	4800 4450 4800 8850
 $EndSCHEMATC

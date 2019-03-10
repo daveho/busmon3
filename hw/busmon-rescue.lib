@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# busmon-rescue_ATMEGA164A-A
+# ATMEGA164A-A
 #
-DEF busmon-rescue_ATMEGA164A-A IC 0 40 Y Y 1 F N
+DEF ATMEGA164A-A IC 0 40 Y Y 1 F N
 F0 "IC" -850 1880 50 H V L BNN
-F1 "busmon-rescue_ATMEGA164A-A" 400 -1950 50 H V L BNN
+F1 "ATMEGA164A-A" 400 -1950 50 H V L BNN
 F2 "TQFP44" 0 0 50 H V C CIN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -57,11 +57,11 @@ X (PCINT24/RXD0)PD0 9 1000 -1000 150 L 40 40 1 1 B
 ENDDRAW
 ENDDEF
 #
-# busmon-rescue_CONN_01X02
+# CONN_01X02
 #
-DEF busmon-rescue_CONN_01X02 J 0 40 Y N 1 F N
+DEF CONN_01X02 J 0 40 Y N 1 F N
 F0 "J" 0 150 50 H V C CNN
-F1 "busmon-rescue_CONN_01X02" 100 0 50 V V C CNN
+F1 "CONN_01X02" 100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -79,11 +79,11 @@ X P2 2 -200 -50 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# busmon-rescue_CONN_01X06
+# CONN_01X06
 #
-DEF busmon-rescue_CONN_01X06 J 0 40 Y N 1 F N
+DEF CONN_01X06 J 0 40 Y N 1 F N
 F0 "J" 0 350 50 H V C CNN
-F1 "busmon-rescue_CONN_01X06" 100 0 50 V V C CNN
+F1 "CONN_01X06" 100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -109,11 +109,11 @@ X P6 6 -200 -250 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# busmon-rescue_CONN_01X16
+# CONN_01X16
 #
-DEF busmon-rescue_CONN_01X16 J 0 40 Y N 1 F N
+DEF CONN_01X16 J 0 40 Y N 1 F N
 F0 "J" 0 850 50 H V C CNN
-F1 "busmon-rescue_CONN_01X16" 100 0 50 V V C CNN
+F1 "CONN_01X16" 100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -159,11 +159,11 @@ X P9 9 -200 -50 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# busmon-rescue_CP1
+# CP1
 #
-DEF busmon-rescue_CP1 C 0 10 N N 1 F N
+DEF CP1 C 0 10 N N 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "busmon-rescue_CP1" 25 -100 50 H V L CNN
+F1 "CP1" 25 -100 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -179,11 +179,11 @@ X ~ 2 0 -150 130 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# busmon-rescue_DIL14
+# DIL14
 #
-DEF busmon-rescue_DIL14 J 0 40 Y N 1 F N
+DEF DIL14 J 0 40 Y N 1 F N
 F0 "J" 0 400 50 H V C CNN
-F1 "busmon-rescue_DIL14" 0 0 50 V V C CNN
+F1 "DIL14" 0 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -205,11 +205,11 @@ X 9 9 350 -200 300 L 50 50 1 1 P I
 ENDDRAW
 ENDDEF
 #
-# busmon-rescue_GND
+# GND
 #
-DEF busmon-rescue_GND #PWR 0 0 Y Y 1 F P
+DEF GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "busmon-rescue_GND" 0 -150 50 H V C CNN
+F1 "GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -218,11 +218,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# busmon-rescue_Q_PNP_BEC
+# Q_PNP_BEC
 #
-DEF busmon-rescue_Q_PNP_BEC Q 0 0 Y N 1 F N
+DEF Q_PNP_BEC Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "busmon-rescue_Q_PNP_BEC" 200 -50 50 H V L CNN
+F1 "Q_PNP_BEC" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -237,11 +237,11 @@ X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# busmon-rescue_R
+# R
 #
-DEF busmon-rescue_R R 0 0 N Y 1 F N
+DEF R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "busmon-rescue_R" 0 0 50 V V C CNN
+F1 "R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -255,11 +255,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# busmon-rescue_VCC
+# VCC
 #
-DEF busmon-rescue_VCC #PWR 0 0 Y Y 1 F P
+DEF VCC #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "busmon-rescue_VCC" 0 150 50 H V C CNN
+F1 "VCC" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

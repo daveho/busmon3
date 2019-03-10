@@ -4,24 +4,9 @@
 #include <avr/interrupt.h>
 #include <util/delay.h>
 
-#if 0
-int main(void) {
-	// Just a test to light all segments for now
-	DDRA = 0xff;
-	PORTA = 0x00; // all segments on?
-	DDRB = 0x0f;
-	PORTB = 0xf0; // enable pull-ups on unused pins
-	DDRC = 0x00;
-	PORTC = 0xff; // enable pull-ups
-	DDRD = 0x00;
-	PORTD = 0xff; // enable pull-ups
+// Comment this out to use hard-coded loop rather than timer
+#define USE_TIMER
 
-	for (;;) {
-	}
-}
-#endif
-
-#if 1
 #define A (1<<0)
 #define B (1<<1)
 #define C (1<<2)
@@ -51,8 +36,7 @@ const uint8_t g_hexfont[16] = {
 
 uint8_t g_count;
 
-ISR(TIMER0_OVF_vect) {
-#if 1
+void update_display(void) {
 	uint8_t which = g_count & 0x3;
 	uint8_t val;
 	switch (which) {
@@ -78,14 +62,19 @@ ISR(TIMER0_OVF_vect) {
 		break;
 	}
 	g_count++;
-#endif
-#if 0
-	PORTA = 0x00;
-	PORTB = 0xf0;
-#endif
 }
 
+#ifdef USE_TIMER
+ISR(TIMER0_OVF_vect) {
+	update_display();
+}
+#endif
+
 int main(void) {
+	// disable JTAG, otherwise port C pins won't work correctly
+	MCUCR |= (1 << JTD);
+	MCUCR |= (1 << JTD);
+
 	DDRA = 0xff;
 	PORTA = 0xff; // all segments off initially
 	DDRB = 0x0f;  // all displays off initially
@@ -95,13 +84,18 @@ int main(void) {
 	DDRD = 0x00;
 	PORTD = 0xff; // enable pull-ups
 
+#ifdef USE_TIMER
 	// Set up timer interrupt to fire 4096 times per second
 	TCCR0B |= (1 << CS00);
 	TIMSK0 |= (1 << TOIE0);
 
 	sei(); // enable interrupts
+#endif
 
 	for (;;) {
+#ifndef USE_TIMER
+		update_display();
+		_delay_ms(1);
+#endif
 	}
 }
-#endif

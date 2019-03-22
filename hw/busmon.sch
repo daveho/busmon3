@@ -348,9 +348,9 @@ F
 Text Label 5600 3300 0    60   ~ 0
 G
 Text Notes 7450 7050 0    60   ~ 0
-MAN3620\nleft high digit
+MAN3620A\nleft high digit
 Text Notes 9650 7050 0    60   ~ 0
-MAN3620\nright high digit
+MAN3620A\nright high digit
 $Comp
 L busmon-rescue:VCC #PWR02
 U 1 1 592E23BD
@@ -542,9 +542,9 @@ Wire Wire Line
 Wire Wire Line
 	14250 6700 14500 6700
 Text Notes 11650 7050 0    60   ~ 0
-MAN3620\nleft low digit
+MAN3620A\nleft low digit
 Text Notes 13650 7050 0    60   ~ 0
-MAN3620\nright low digit
+MAN3620A\nright low digit
 Wire Wire Line
 	3000 6250 3000 6350
 Wire Wire Line
@@ -1066,4 +1066,6 @@ Wire Wire Line
 	3000 8700 3000 8750
 Wire Bus Line
 	4800 4450 4800 8850
+Text Notes 10150 8250 0    60   ~ 0
+Other LED displays that should work include:\nMAN3610A, MAN3410A, MAN71A, MAN3810A\nMAN4610A\nLTS-4510AG\nLTS-4910AHR\nSA04-11GWA\nHDSP-311E
 $EndSCHEMATC

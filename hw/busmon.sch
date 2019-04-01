@@ -373,8 +373,8 @@ F 3 "" H 3150 6450 50  0001 C CNN
 	1    3150 6450
 	1    0    0    -1  
 $EndComp
-Text Notes 11950 10200 0    60   ~ 0
-16 bit hexadecimal bus monitor
+Text Notes 11900 10400 0    60   ~ 0
+16 bit hexadecimal bus monitor\nCopyright (c) 2017-2019, David H. Hovemeyer <david.hovemeyer@gmail.com>\nMade available under terms of CERN Open Hardware License v1.2\nSee README.md
 $Comp
 L busmon-rescue:CONN_01X02 J7
 U 1 1 592E2D34
@@ -1064,8 +1064,8 @@ Wire Wire Line
 	3000 8300 3000 8450
 Wire Wire Line
 	3000 8700 3000 8750
-Wire Bus Line
-	4800 4450 4800 8850
 Text Notes 10150 8250 0    60   ~ 0
 Other LED displays that should work include:\nMAN3610A, MAN3410A, MAN71A, MAN3810A\nMAN4610A\nLTS-4510AG\nLTS-4910AHR\nSA04-11GWA\nHDSP-311E
+Wire Bus Line
+	4800 4450 4800 8850
 $EndSCHEMATC

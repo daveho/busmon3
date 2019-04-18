@@ -20,7 +20,7 @@ Also note that the board (1) is designed to sit at the top of an 830 contact bre
 * 4 DIP14 package common anode 7 segment LED displays (MAN3620A, LTS-4910AHR, or similar)
 * 4 SOT-23 MMBT3906 transistors
 * 1 0.1uF 0805 ceramic capacitor (for decoupling)
-* 7 330 Ohm 0805 resistors
+* 7 270 Ohm 0805 resistors (the schematic shows 330 Ohm, but the displays are driven at 1/4 duty)
 * 4 4.7K Ohm 0805 resistors
 * 2 pin 0.1" male pin header (for breadboard power connections)
 * 6 pin 0.1" male pin header (AVR programming header)

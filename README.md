@@ -8,7 +8,7 @@ Obligatory action shot (click for full size):
 
 I got the idea from Quinn Dunki's [HexOut](http://quinndunki.com/blondihacks/?p=610) project.
 
-The design is fairly brute force, but it does work.  The TQFN44 package of the atmega164a has 0.8mm pitch, which isn't too bad to hand-solder.  I have ordered boards from [OSHPark](https://oshpark.com/).
+The design is fairly brute force, but it does work.  The TQFN44 package of the atmega164a has 0.8mm pitch, which isn't too bad to hand-solder.  I have ordered boards from both [OSHPark](https://oshpark.com/) and [Seeed Studio](https://www.seeedstudio.com/fusion_pcb.html) and they work fine.
 
 Note that the data inputs are pulled high (to VCC) by the atmega164a's internal pullup resistors.  You could change this in the firmware if you felt like it (e.g., because your bus already has external pullup or pulldown resistors.)
 

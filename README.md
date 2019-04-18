@@ -4,7 +4,7 @@
 
 Obligatory action shot (click for full size):
 
-<a href="busmon3.jpg"><img alt="Picture of busmon3" src="busmon3-sm.jpg"></a>
+<a href="busmon3-0.2.jpg"><img alt="Picture of busmon3" src="busmon3-0.2-sm.jpg"></a>
 
 I got the idea from Quinn Dunki's [HexOut](http://quinndunki.com/blondihacks/?p=610) project.
 

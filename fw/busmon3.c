@@ -107,8 +107,8 @@ int main(void) {
 	PORTD = 0xff; // enable pull-ups
 
 #ifdef USE_TIMER
-	// Set up timer interrupt to fire 4096 times per second
-	TCCR0B |= (1 << CS00);
+	// Set up timer interrupt to fire 256 times per second
+	TCCR0B |= (1 << CS01);
 	TIMSK0 |= (1 << TOIE0);
 
 	sei(); // enable interrupts
